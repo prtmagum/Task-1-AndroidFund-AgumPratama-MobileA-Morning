@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="fragment1">#44C149</color>
+    <color name="fragment2">#AE9753</color>
+    <color name="homefragment">#D5DC90</color>
+    <color name="red">#B62020</color>
+    <color name="buttton">#2BC990</color>
 </resources>

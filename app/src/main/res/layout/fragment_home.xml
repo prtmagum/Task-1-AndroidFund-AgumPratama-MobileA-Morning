@@ -3,15 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    android:background="@color/homefragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="50dp"
-        android:text="INI ADALAH HALAMAN FRAGMENT" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="116dp"
+
+        android:text="HALAMAN FRAGMENT"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
 </FrameLayout>

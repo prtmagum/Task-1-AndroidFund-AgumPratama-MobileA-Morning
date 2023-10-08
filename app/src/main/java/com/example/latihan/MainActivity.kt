@@ -23,29 +23,34 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btnImplicit: Button = findViewById(R.id.btn_implicit)
         btnImplicit.setOnClickListener(this)
 
+        val btnShare: Button = findViewById(R.id.btn_share)
+        btnShare.setOnClickListener(this)
+
         val btnFragment: Button = findViewById(R.id.btn_fragment)
         btnFragment.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when (v.id) {
-            R.id.btn_implicit -> {
-//                val message = "Hallo tes"
-//                val intent = Intent()
-//                intent.action = Intent.ACTION_SEND
-//                intent.putExtra(Intent.EXTRA_TEXT, message)
-//                intent.type = "text/plain"
-//                startActivity(intent)
-
+            R.id.btn_share -> {
+                val message = "Hallo tes"
                 val intent = Intent()
-                intent.putExtra("history","Anda sudah login")
-                setResult(RESULT_OK,intent)
-                finish()
-            }
-            R.id.btn_fragment -> {
-                val intent = Intent(this@MainActivity, TesActivity::class.java)
+                intent.action = Intent.ACTION_SEND
+                intent.putExtra(Intent.EXTRA_TEXT, message)
+                intent.type = "text/plain"
                 startActivity(intent)
+            }
+                R.id.btn_implicit -> {
+                    val intent = android.content.Intent()
+                    intent.putExtra("history", "Anda sudah login")
+                    setResult(androidx.appcompat.app.AppCompatActivity.RESULT_OK, intent)
+                    finish()
+
+                }
+                R.id.btn_fragment -> {
+                    val intent = Intent(this@MainActivity, TesActivity::class.java)
+                    startActivity(intent)
+                }
             }
         }
     }
-}
