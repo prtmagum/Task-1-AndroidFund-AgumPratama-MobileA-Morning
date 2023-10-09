@@ -16,23 +16,25 @@
         android:id="@+id/fragment1Btn"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="56dp"
         android:backgroundTint="@color/black"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="641dp"
         android:text="Fragment 1"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainer" />
 
     <Button
         android:id="@+id/fragment2Btn"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="56dp"
         android:backgroundTint="@color/black"
         android:text="Fragment 2"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="641dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainer" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

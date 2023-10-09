@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
                 }
                 R.id.btn_fragment -> {
-                    val intent = Intent(this@MainActivity, TesActivity::class.java)
+                    val intent = Intent(this@MainActivity, Fragment::class.java)
                     startActivity(intent)
                 }
             }
